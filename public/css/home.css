@@ -1,12 +1,101 @@
 
 /* header */
+.home__header {
+    background-color: #EAC926;
+    height: 320px;
+    width: 100%;
+}
+
 .home__header__div figure img {
     padding: 20px; 
-    margin: 2;
+    margin: 2px 0px;
     width: 180px;
     
 }
 
-.home__header__div__compra h3{
+.home__header__div__compra p{
     text-align: center;
+    font-weight: 400;
+
+}
+
+.home__header__div__form {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.home__header__div__form input{
+    display: block;
+}
+
+.home__header__nav--menu1, 
+.home__header__nav--menu2{
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.home__header__nav--menu2 i {
+    margin-left: 5px;
+}
+
+.home__header__button--bars {
+    width: 30px;
+    height: 30px;
+    background-color: var(--colorCeleste);
+    color: var(--colorGrisClaro);
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 45%;
+}
+
+/* MAIN */
+
+
+.home__main__article__figure{
+    margin: 0 20px;
+}
+
+.home__main__article__figure img{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.home__main__article__contendeor--precio-oferta {
+    margin-top: 0px;
+}
+
+.home__main__article--precio {
+    font-size: 18px;
+    display: block;
+
+}
+.home__main__article--oferta {
+    font-size: 16px;
+    display: block;
+}
+.home__main__article h4 {
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+/* FOOTER */
+
+.home__footer--contenedor {
+    text-align: center;
+    padding: 10px 35px;
+}
+
+.home__footer_article {
+    margin-top: 40px;
+}
+
+.home__footer_article i {
+    font-size: 30px;
+}
+
+.home__footer--contenedor-copyright {
+    margin: 25px 20px;
+    padding: 0;
 }
