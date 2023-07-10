@@ -7,4 +7,6 @@ Utilizaremos HTML para definir la estructura semántica de nuestras páginas web
 
 [Trabajo practico N° 5. Etapa 2 AGREGANDO ESTILOS (css)](https://github.com/hugoAvallay/hugoAvallay-mercadoLiebre-tp5/tree/styles)
 
+[Trabajo practico N° 5. Etapa 3 ADAPTACION RESPONSIVA (css)](https://github.com/hugoAvallay/hugoAvallay-mercadoLiebre-tp5/tree/responsive)
+
 
