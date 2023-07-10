@@ -6,4 +6,6 @@ controlar la apariencia visual de nuestras páginas web. CSS permite definir est
 Exploraremos cómo aplicar estilos a elementos HTML utilizando selectores y reglas CSS. Aprenderemos a utilizar la cascada 
 y la herencia para crear estilos coherentes en toda nuestra aplicación. También exploraremos técnicas avanzadas, como la creación 
 de diseños responsivos 
+[Trabajo practico N° 5. Etapa 1 MAQUETACION (html)](https://github.com/hugoAvallay/hugoAvallay-mercadoLiebre-tp5/tree/estructura)
 
+[Trabajo practico N° 5. Etapa 2 AGREGANDO ESTILOS (css)](https://github.com/hugoAvallay/hugoAvallay-mercadoLiebre-tp5/tree/styles)
