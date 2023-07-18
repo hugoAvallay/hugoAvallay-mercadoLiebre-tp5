@@ -1,16 +1,58 @@
 /* header */
 .home__header {
     background-color: #EAC926;
-    height: 220px;
-    width: 100%;
+}
+
+.home__header__div {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+
+
+}
+
+.home__header__div__figure {
+    width: 50%;
+    padding: 10px;
 }
 
 .home__header__div figure img {
-    padding: 20px;
-    margin: 2px 0px;
-    width: 180px;
+    width: 100%;
+}
+
+.home__header__div__figure,
+.home__header__div__form {
+    width: 50%;
 
 }
+
+.home__header__div__form {
+    position: relative;
+    margin-right: 15px;
+}
+
+.home__header__div__form input {
+    width: 100%;
+    outline: none;
+    height: 35px;
+    padding: 0 10px;
+    outline: none;
+}
+
+
+.boton_buscar {
+    top: 0;
+    right: 1px;
+    bottom: 0;
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    border-left: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 
 .home__header__div__compra p {
     text-align: center;
@@ -18,12 +60,7 @@
 
 }
 
-.home__header__div__form {
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-
-.home__header__nav{
+.home__header__nav {
     display: none;
 }
 
@@ -39,6 +76,10 @@
     margin: 30px 45%;
 }
 
+.home__banner img {
+    display: none;
+}
+
 /* MAIN */
 
 .home__main {
@@ -48,6 +89,7 @@
 
 .home__main__article {
     margin: 10px 0;
+    background-color: #FFF;
 }
 
 .home__main__article__figure {
@@ -60,26 +102,48 @@
     margin: 0;
 }
 
-.home__main__article__contendeor--precio-oferta-descr {
+.home__main__article__contendeor--precio-descuento-descr {
     border-top: 1px solid var(--colorGrisClaro);
     padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-
-.home__main__article--precio {
-    font-size: 18px;
+.home__main__article__contendeor--precio-descuento-descr i {
     display: block;
-
-}
-
-.home__main__article--oferta {
     font-size: 16px;
-    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
 }
 
-.home__main__article h4 {
+.home__main__article__contendeor--precio-descuento-descr p.precio {
+    width: 30%;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.home__main__article__contendeor--precio-descuento-descr p.descuento {
+    width: 70%;
+    color: #39b54a;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.home__main__article__contendeor--precio-descuento-descr h4 {
     display: none;
 }
+
+
 
 /* FOOTER */
 
@@ -102,32 +166,83 @@
 }
 
 
-@media (min-width:361px) {
+@media (min-width:430px) {
 
     /* Header */
     .home__header {
-        height: 260px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 15px;
     }
+
+    .home__header__div {
+        width: 70%;
+    }
+
+    .home__header__div__compra {
+        width: 30%;
+    }
+
     .home__header__nav {
-        display: block;
-    }
-    .home__header__nav--menu1,
-    .home__header__nav--menu2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         font-size: 12px;
-        margin: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    .home__header__nav--menu1 {
+        width: 40%;
+        display: flex;
+        gap: 10px;
+        gap: 10px;
+        margin-left: 10px;
+    }
+
+    .home__header__nav--menu2 {
+        width: 40%;
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-right: 10px;
     }
 
     .home__header__nav--menu2 i {
-        margin-left: 5px;
+        margin-left: 2px;
     }
+
+
+
     .home__header__button--bars {
         display: none;
     }
 
+    /* banners */
+    .home__banner img {
+        display: block;
+        width: 100%;
+    }
 
     /* MAIN */
-    .home__main__article h4 {
+
+    .home__main__section__contenedor-articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .home__main__article {
+        width: 48%;
+    }
+
+    .home__main__article__contendeor--precio-descuento-descr h4 {
         display: block;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
     }
 
     .home__main__article {
@@ -137,10 +252,41 @@
     /* FOOTER */
 }
 
-@media (min-width:769px) {
+@media (min-width:1024px) {
+
     /* Header */
 
+    .home__header__div {
+        width: 80%;
+    }
+
+    .home__header__div__compra {
+        width: 20%;
+    }
+
+    .home__header__div figure img {
+        /*         width: 80%; */
+        padding: 20px;
+    }
+
+    .home__header__nav--menu1 {
+        font-size: 16px;
+        gap: 25px;
+        justify-content: flex-start;
+    }
+
+    .home__header__nav--menu2 {
+        font-size: 16px;
+        gap: 25px;
+
+    }
+
     /* MAIN */
+
+    .home__main__article {
+        width: 23%;
+    }
+
 
     /* FOOTER */
 }
