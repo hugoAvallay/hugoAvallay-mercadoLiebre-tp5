@@ -1,7 +1,7 @@
 {
   "name": "hugoavallay-mercadoliebre-tp5",
   "version": "1.0.0",
-  "description": "",
+  "description": "Etapa 3: CSS y adaptacion responsive",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.1"
   }
 }
